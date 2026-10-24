@@ -1,0 +1,975 @@
+/***** CSS resets *****/
+
+p, ul, ol, h1, h2, h3, blockquote {
+	margin: 0;
+	padding: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/***** Body styles *****/
+
+body {
+	font-family: "raleway", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+	background-color: rgb(36, 64, 49);
+	color: black;
+	font-size: 15px;
+    line-height: 1.7em;
+}
+
+#back {
+    color:rgb(0, 84, 39);
+    display: none; 
+    position: fixed; 
+    bottom: 20px; 
+    right: 10px;
+    z-index: 99; 
+    background-color: white; 
+    outline: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px; 
+    font-size: 14px;
+}
+
+#back:hover {
+    color:white;
+    background-color: #a80000;
+}
+
+.button {
+    padding: 10px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    font-size: 1.2em;
+    border-radius: 20px;
+    border-style: none;
+    width: 40vw;
+    background-color: #a80000;
+    color: white;
+}
+
+.button a:link, .button a:visited {
+    color:white;
+    text-decoration: none;
+    /* background-color: #a80000; */
+}
+
+.button a:hover, .button a:active {
+    color:rgb(255, 221, 173);
+    background-color: #a80000;
+}
+
+/***** Typography *****/
+
+h1, h2 {
+	font-family: "playfair-display", serif;
+    font-weight: 600;
+    font-style: normal;
+	margin-bottom: .2em;
+    font-size: 3em;
+    line-height: 1.3em;
+    padding: 30px 50px 10px 50px;
+    text-align: center;
+    color:rgb(0, 84, 39);
+}
+
+p {
+    text-align: center;
+    padding: 10px 50px 10px 50px;
+}
+
+/***** Navigation styles *****/
+
+#mainnav {
+    /* position: relative; */
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+}
+
+#nav-menu ul li a {
+    font-family: "raleway", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+	display:block;
+	background:#f0f0f0;
+	color:rgb(0, 84, 39);
+	font-size: 12px;
+	line-height: 30px;
+	text-decoration:none;
+	text-transform:uppercase;
+	text-align:right;
+	width: 100px;
+    padding-right: 5px;
+}
+
+#nav-menu ul li a:hover {
+	background:#a80000;
+    color: white;
+}
+
+#mobilenav {
+    background-color: #f0f0f0;
+    padding-top: 25px;
+}
+
+#mobilenav i {
+    text-align: right;
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(0, 84, 39);
+    position: relative;
+}
+
+#nav-title {
+    padding-top: 10px;
+    padding-bottom: 25px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#nav-title h1, #nav-title h2 {
+    font-family: "raleway", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    line-height: 10px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+#nav-title h2 {
+    font-size: 10px;
+    padding: 0;
+}
+
+#nav-menu {
+    position: absolute;
+    top: 100px;
+    right: 0;
+    background:#f0f0f0;
+}
+
+
+/***** Header Image styles *****/
+
+#header-image {
+    background-image: url(catering-final-images/salmon-psd-final-1200x800.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+} 
+
+#header-image h1 {
+    align-content: center;
+    margin-bottom: 100px;
+    color: white;
+    text-align: center;
+    letter-spacing: 2.5px;
+    font-size: 60px;
+    font-weight: normal;
+    line-height: 1.2em;
+}
+
+/***** Welcome styles *****/
+
+#welcome {
+    background: url(catering-final-images/flowers-background-copy-space.jpg) repeat;
+    background-size: 100% 60%;
+    text-align: center;
+}
+
+#welcome-div {
+    text-align: center;
+}
+
+#welcome h1 {
+    font-family: "raleway", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    padding-top: 60px;
+}
+
+#welcome span {
+    color: #a80000;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+#welcome-div h2 {
+    letter-spacing: 3px;
+}
+
+#welcome img {
+    border-top-left-radius: 150px;
+    border-top-right-radius: 150px;
+    margin-bottom: 50px;
+}
+
+/***** Events styles *****/
+
+#event {
+    background: url(catering-final-images/flowers-background-copy-space.jpg) repeat;
+    background-size: 100% 60%;
+    text-align: center;
+}
+
+#event h1 {
+    letter-spacing: 3px;
+    padding-bottom: 30px;
+}
+
+#event h3 {
+    font-family: "playfair-display", serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 18px;
+    text-align: left;
+    padding: 0 20px 20px 0;
+    color:rgb(0, 84, 39);
+}
+
+#event-info {
+    display: flex;
+    padding: 0 50px 0 50px;
+}
+
+#event-info p {
+    text-align: left;
+    padding: 0;
+}
+
+#event img {
+    border-top-left-radius: 150px;
+    border-top-right-radius: 150px;
+    margin-bottom: 100px;
+}
+
+/***** Venues styles *****/
+
+#venues {
+    position: relative;
+    background-color: #F8F3E6;
+    padding-bottom: 30px;
+}
+
+#venues img {
+    max-width: 100vw;
+}
+
+#venues-info {
+    background-color: #F8F3E6;
+    border-top-left-radius: 200px;
+    border-top-right-radius: 200px;
+    position: absolute;
+    top: 45vw;
+    text-align: center;
+}
+
+#venues-info h1 {
+    padding-top: 45px;
+}
+
+/* #venues-info button {
+    margin: 20px 50px 40px 50px;
+} */
+
+#venues-images {
+    background-color: #F8F3E6;
+    margin-top: 300px;
+    padding: 0;
+}
+
+#venues-images img {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/***** Moments styles *****/
+
+#moments {
+    background-color: #F8F3E6;
+    padding-bottom: 30px;
+}
+
+#moments img {
+    border-top-left-radius: 200px;
+    border-top-right-radius: 200px;    
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-top: -30px;
+    margin-bottom: -20px;
+}
+
+#quotes blockquote {
+    text-align: center;
+    padding: 10px 20px 20px 20px;
+}
+
+#quotes span {
+    font-weight: bold;
+    font-style: italic;
+}
+
+.color{
+    color:rgb(0, 84, 39);
+    font-size: 16px;
+}
+
+#quotes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.color {
+    font-size: 1.1em;
+    line-height: 1.5em;
+}
+
+/***** Staff styles *****/
+
+#staff {
+    background-color: #F8F3E6;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+}
+
+#staff p {
+    padding-bottom: 30px;
+}
+
+#staff img {
+    border-top-left-radius: 150px;
+    border-top-right-radius: 150px;
+    margin-bottom: 80px;
+}
+
+
+/***** Journey styles *****/
+
+#journey {
+    background-color: #F8F3E6;
+    padding-bottom: 80px;
+}
+
+#journey h1 {
+    padding-top: 0;
+}
+
+#journey p {
+    text-align: left;
+    padding: 15px 70px 10px 70px;
+}
+
+#journey article {
+    text-align: center;
+}
+
+#journey h2 {
+    font-size: 30px;
+    margin-top: 30px;
+    padding-bottom: 0;
+}
+
+/***** Gallery styles *****/
+
+.gallery-card img {
+    display: flex;
+}
+
+.gallery-card img {
+    width: 100%;
+
+}
+
+/***** Footer styles *****/
+
+footer {
+    background: url(catering-final-images/radish-psd-final-600x1000.jpg) no-repeat;
+    padding-bottom: 300px;
+    background-size: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+footer form {
+    text-align: center;
+}
+
+footer h2, footer h3 {
+    font-family: "raleway", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 20px;
+    text-align: center;
+    color:rgb(0, 84, 39);
+}
+
+footer p {
+    border-bottom: 1px solid rgb(0, 84, 39);
+    margin: 30px 70px 0 70px;
+    padding: 0;
+    padding-bottom: 50px;
+}
+
+#secondary-nav-list {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: left;
+    font-size: 16px;
+    margin: 30px 100px 20px 100px;
+}
+
+#secondary-nav-list ul {
+    flex: 1;
+}
+
+#secondary-nav-list ul li {
+    padding-bottom: 10px;
+}
+
+#secondary-nav-list ul li a:link, #secondary-nav-list ul li a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+#secondary-nav-list ul li a:hover, #secondary-nav-list ul li a:active {
+    color: #a80000;
+}
+
+#secondary-nav-list h2 {
+    padding: 0;
+    font-weight: bold;
+    text-align: left;
+}
+
+#contact-info li h2 {
+    font-size: 16px;
+}
+
+#social h3 {
+    text-align: center;
+    padding: 20px;
+}
+
+.social-icon {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+}
+
+.social-icon li a {
+    color: #a80000;
+    padding: 20px;
+
+}
+
+/**** media query 600px styling ****/
+
+@media only screen and (min-width: 600px) {
+
+    p {
+        font-size: 1.3em;
+        line-height: 1.7em;
+    }
+
+    h1, h2 {
+        font-size: 4em;
+    }
+
+    #mobilenav i {
+        font-size: 30px;
+    }
+
+    #nav-menu {
+        top: 110px;
+    }
+
+    #nav-menu ul li a {
+	    font-size: 16px;
+        padding-top: 5px;
+    }
+
+    #nav-title h1, #nav-title h2 {
+        line-height: 15px;
+        font-size: 50px;
+    }
+    
+    #nav-title h2 {
+        font-size: 1em;
+    }
+
+    #header-image {
+        height: 700px;
+    } 
+
+    #header-image h1 {
+        font-size: 5.7em;
+    }
+
+    .button {
+        font-size: 1.3em;
+    }
+
+    #welcome-div {
+        padding: 15px 70px 30px 70px;
+    }
+
+    #welcome span {
+        letter-spacing: 0.3em;
+    }
+
+    #event-group {
+        padding: 15px 70px 30px 70px;
+    }
+
+    #venues-info {
+        border-top-left-radius: 300px;
+        border-top-right-radius: 300px;
+        top: 50vw;
+        padding: 0 50px 0 50px;
+    }
+
+    #venues-info h1 {
+        padding-top: 50px;
+    }
+
+    #venues-info p {
+        padding: 0;
+    }
+
+    #venues-images {
+        margin-top: 350px;
+    }
+
+    #quotes {
+        padding: 10px 70px 10px 70px;
+        font-size: 1.3em;
+    }
+
+    #staff p {
+        padding: 15px 70px 30px 70px;
+    }
+
+    #journey p {
+        padding: 15px 70px 10px 70px;
+    }
+
+    #journey article {
+        padding: 15px 70px 10px 70px;
+    }
+
+    #gallery img {
+        max-width: 50vw;
+    }
+
+    .gallery-card {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0;
+    }
+
+    footer p {
+        padding: 15px 70px 10px 70px;
+    }
+
+    #secondary-nav-list h2 {
+        padding-left: 50px;
+    }
+
+    footer {
+        background: url(catering-final-images//radish-psd-final-1200x1000.jpg) no-repeat;
+        padding-bottom: 350px;
+    }
+
+}
+
+
+/**** media query 768px styling ****/
+
+@media only screen and (min-width: 768px) {
+
+    .button {
+        width: 40%;
+    }
+
+     #header-image h1 {
+        font-size: 6em;
+    }
+
+    #mobilenav {
+        display: none;
+    }
+
+    #nav-menu{
+        box-sizing: border-box;
+        width: 100%;
+        padding-bottom: 10px;
+        border-top: none;
+        position: sticky;
+        top: 0;
+    }
+
+    #nav-menu ul {
+        display: flex;
+        justify-content: space-between;
+        border-top: none;
+        padding: 0;
+    }
+
+    #nav-menu ul li {
+        flex: 1;
+        padding: 20px 50px 0 50px;
+    }
+
+    #nav-menu ul li a {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0;
+        text-align: center;
+        border-bottom: none;
+        border-left: none;
+        border-right: none;
+        font-size: 1.1em;
+    }
+
+    #nav-title {
+        padding-bottom: 0;
+        padding-top: 0;
+    }
+
+    #welcome {
+        background: url(catering-final-images/flowers-background-copy-space.jpg) no-repeat;
+        background-size: 100% 100%;
+        padding: 30px 150px 15px 150px;
+    }
+
+    #welcome-div {
+        padding: 60px 0 0 0 ;
+    }
+
+    #event {
+        background: url(catering-final-images/flowers-background-copy-space.jpg) no-repeat cover;
+        background-size: 100% 100%;
+        padding: 0 100px 15px 100px;
+    }
+    
+    #event h3 {
+        font-family: "playfair-display", serif;
+        font-weight: 600;
+        font-style: normal;
+        font-size: 1.5em;
+        text-align: left;
+        padding: 0 20px 20px 0;
+    }
+    
+    #event-div p {
+        text-align: left;
+        padding: 0;
+    }
+    
+    /* #event img {
+        margin: 20px 100px 100px 100px;
+    } */
+
+    #venues-info {
+        border-top-left-radius: 500px;
+        border-top-right-radius: 500px;
+        top: 50vw;
+        margin: 0 100px 0 100px;
+    }
+
+    #venues-info h1 {
+        padding-top: 70px;
+    }
+
+    #venues-images {
+        /* margin-top: 700px; */
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0;
+    }
+
+    #quotes {
+        padding: 20px 150px 10px 150px;
+    }
+
+    #staff p { 
+        padding: 15px 150px 30px 150px;
+    }
+
+    #staff img {
+        padding-top: 20px;
+    }
+
+    #journey p {
+        padding: 15px 150px 10px 150px;
+    }
+
+    #journey article {
+        padding: 15px 150px 10px 150px;
+    }
+
+    #journey h2 {
+        font-size: 2.5em;
+    }
+
+    footer {
+        padding-bottom: 400px;
+    }
+
+    #footernav {
+        display: flex;
+        padding-top: 20px;        
+    }
+
+    #secondary-nav-list {
+        margin-right: 0;
+        margin-left: 0;
+        font-size: 1.2em;
+    }
+
+    #secondary-nav-list address {
+        padding-right: 50px;
+    }
+
+    #contact-info li h2 {
+        font-size: 1.2em;
+        margin-left: 50px;
+    }
+
+    #social {
+        margin-right: 50px;
+    }
+
+    #social h3 {
+        padding-top: 30px;
+    }
+
+}
+
+
+/* **** media query 960px styling *****/
+
+@media only screen and (min-width: 960px) {
+
+    .button {
+        font-size: 1.4em;
+    }
+
+    #header-image h1 {
+        font-size: 7em;
+    }
+
+    #mainnav ul li {
+        padding: 20px 70px 0 70px;
+    }
+
+    #welcome-div { 
+        display: flex;
+        text-align: left;
+    }
+
+    #welcome h2, #welcome p {
+        text-align: left;
+        padding: 10px 50px 10px 0;
+    }
+
+    #welcome button {
+        margin-right: 80px;
+        width: 50%;
+    }
+
+    #welcome img {
+        margin: 40px 0;
+    }
+
+    #event {
+        background: url(catering-final-images/flowers-background-copy-space.jpg) no-repeat cover;
+        background-size: 100% 100%;
+        padding: 50px 100px 50px 100px;
+    }
+
+    #event h1 {
+        text-align: left;
+        padding: 0 0 30px 0;
+    }
+
+    #event-group {
+        padding: 0 0 0 50px;
+    }
+
+    #event-div {
+        display: flex;
+        flex-direction: row-reverse;
+        text-align: left;
+    }
+
+    #event-info div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #event-info {
+        display: flex;
+        padding: 0 0 20px 0;
+    }
+
+    #event img {
+        margin: 20px 0 100px 0;
+    }
+
+    #event button {
+        margin-right: 80px;
+        width: 50%;
+    }
+
+    #venues-info {
+        border-top-left-radius: 1000px;
+        border-top-right-radius: 1000px;
+        top: 50vw;
+        margin: 0 200px 0 200px;
+    }
+
+     #venues-info h1 {
+        padding-top: 80px;
+    }
+
+    #venues-images {
+        margin-top: 350px;
+    }
+
+    #quotes {
+        display: flex;
+        flex-wrap: nowrap;
+        text-align: left;
+        padding: 20px 70px 0 70px;
+    }
+
+    #quotes div {
+        padding: 20px;
+    }
+
+    #quotes blockquote {
+        text-align: left;
+    }
+
+    footer p {
+        margin-left: 200px;
+        margin-right: 200px;
+    }
+
+}
+
+
+/***** media query 1400px styling *****/
+
+@media only screen and (min-width: 1200px) {
+
+    #container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    h1 {
+        font-size: 5em;
+    }
+
+    .button {
+        font-size: 1.5em;
+    }
+
+     #mainnav ul li {
+        padding: 20px 100px 0 100px;
+    }
+
+    #header-image {
+        height: 800px;
+    }
+
+    #header-image h1 {
+        font-size: 8em;
+    }
+
+    #welcome h2 {
+        font-size: 5em;
+    }
+
+    #event h1 {
+        text-align: left;
+        padding: 0 0 30px 0;
+    }
+
+    #event-info p {
+        padding: 30px;
+    }
+
+    #event img {
+        margin: 20px 0 100px 0;
+    }
+
+    #venues-info {
+        border-top-left-radius: 1000px;
+        border-top-right-radius: 1000px;
+        top: 45vw;
+        margin: 0 200px 0 200px;
+    }
+
+     #venues-info h1 {
+        padding-top: 75px;
+    }
+
+    #moments {
+        padding: 50px 100px 20px 100px;
+    }
+
+    #staff {
+        padding: 50px 100px 20px 100px;
+    }
+
+    #journey {
+        padding: 30px 100px 80px 100px;
+    }
+
+    #journey h2 {
+        font-size: 3em;
+    }
+
+    .gallery-card {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 0;
+    }
+
+    footer p {
+        margin-left: 300px;
+        margin-right: 300px;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+
+     #venues-images {
+        margin-top: 400px;
+    }
+}
